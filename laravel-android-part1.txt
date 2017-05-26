@@ -1,3 +1,8 @@
+git clone https://github.com/gustavohroque/laravel-android-part1.git
+git remote add origin https://github.com/gustavohroque/laravel-android-part1.git
+git push -u origin master
+
+
 export JRE_HOME=/opt/jdk1.8.0_66/jre
 export JAVA_HOME=/opt/jdk1.8.0_66
 export ANDROID_HOME=/home/roque/Android/Sdk
