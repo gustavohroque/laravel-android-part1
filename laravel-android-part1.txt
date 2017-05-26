@@ -1,0 +1,89 @@
+export JRE_HOME=/opt/jdk1.8.0_66/jre
+export JAVA_HOME=/opt/jdk1.8.0_66
+export ANDROID_HOME=/home/roque/Android/Sdk
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:~/.config/composer/vendor/bin/"
+export PATH="$PATH:/opt/gradle/gradle-3.4.1/bin"
+echo $PATH
+
+
+Illuminate\Database\QueryException with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`codedelivery_curso`.`products`, CONSTRAINT `products_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)) (SQL: insert into `products` (`updated_at`, `created_at`) values (2016-08-24 18:14:44, 2016-08-24 18:14:44))'
+
+
+- /app - pas referentes a aplpica??o
+    - /comsole - comandos espec?ficos para aplica??o reconhecido pelo artisan
+    - /events
+    - /exceptions - customizar exceptions
+    - /http - pasta que cuida das requisi??es http, controllers, midwares( entre requisi?? e resposta, intercepta requisi??o e verifica??es dirante requisi??o), requests para valida??es.
+        - routes.php aquivo onde ? registrada as rotas
+    - /jobs - pasta para guardar classe de comandos que possa ser executado, ex tarefa usuario contrata??o cart?o de credito roda em background exemplo aprova??o cart?o
+    - /listners - pasta en conjunto com ./events executa o metodo de acordo com o evento
+    - /providers - regtistro de pacotes p?oprios, eventos, pontos espec?ficos de rotas
+    - user.php
+- /bootstrap - pasta com o autolod do composer e arquivos de inicializa??o e cache
+- /config - pasta de configura??es da aplica??o
+- /database - pasta respons?vel pelos gerenciamentos de bancos de dados
+- /public - document root da aplica??o
+- /resources - armazenas css, arquivos de pre-processamento, arquivos de tradu??o, views
+- /storage - armazena arquivos gerados pelo framework como sess?o , chache , logs
+- /tests - pasta para armazenamento dos testes como TDD
+- /vendor - pasta com as dependencias externas ou bibliotecas de terceiros
+.env - arquivo que guarda todas a configura??es do seu ambiente em rela??o ao framework. n?o deve entrar no controle de vers?o
+.env.example - arquivo de emplo para gera??o do .env
+.gitignore - arquivos ignorados
+.gitatribute
+server.php - arquivo que simula o mod rewrite
+phpunit.xml - testes
+phpspec.yml - testes
+packge.json - para pacotes gulp para rodar aplica??es em nodejs
+gulpfile.js
+composer.json
+composer.lock
+artisan - arquivo que faz a ponte com todos os comandos executados via console
+
+
+LARAVEL MVC
+
+php artisan make:model nome_model -m ( ja cria a migração com o -m )
+php artisan make migration create_table_post --create=posts ( cria o arquivo em migrations onde podem ser adicionadas outros campos na tabela post --create=nome_tabela que vc quer criar )
+php artisan migrate ( executa os scrips de migration )
+php artisan tinker
+$post = new App\Post;
+$post->title = "first post";
+$post->content = "content first post";
+$post->save();
+App\Post::all();
+*MassingAssignment*
+App\Post::create(["title"=>"Second post","content"=>"content second post"]);
+php artisan make:controller NomeController
+php artisan tinker
+factory('App\Post')->make(); ( cria um novo registro )
+factory('App\Post')->create(); ( cria e salva um novo registro )
+factory('App\Post' , qtd_desejada )->create(); ( cria e salva um novo registro )
+php artisan make:seeder PostsTableSeeder ( cria um novo seeder)
+php artisan db:seed ( execuuta os seeders )
+composer dump-autoload ( sempre rodar porque nem sempre os dados rodavam no autoload )
+php artisan tinker
+$post = App\Psot::find(1);
+$post->tags()->attach([2,5]); ( adiciona a tabela )
+$post->tags()->detach([5]); ( remove da tabela )
+$post->tags()->sync([1,3,6,7]); ( sincroniza os attach com os detach )
+
+php artisan make:request PostRequest ( Cria a Request Para validação )
+
+
+Criando API no LARAVEL
+-Repository
+-Multitenancy
+
+laravel-android-part1
+composer create-project --prefer-dist laravel/laravel:5.3.* laravel-android-part1 => instala o laravel na versão solicitada
+php artisan serve => inicia o servidor
+php artisan app:name SON => altera o nome do namespace
+composer require tymon/jwt-auth:0.5.9 => instala JWT web token authentication
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\JWTAuthServiceProvider" => Publica o Service provider dentro da config/jwt.php
+php artisan make:seeder UsersTableSeeder => criando seeder
+php artisan migrate:refresh --seed => cria as seeds
+
+
+

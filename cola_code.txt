@@ -1,0 +1,10 @@
+export JRE_HOME=/opt/jdk1.8.0_66/jre
+export JAVA_HOME=/opt/jdk1.8.0_66
+export ANDROID_HOME=/home/roque/Android/Sdk
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:~/.config/composer/vendor/bin/"
+export PATH="$PATH:/opt/gradle/gradle-3.4.1/bin"
+echo $PATH
+
+
+Illuminate\Database\QueryException with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`codedelivery_curso`.`products`, CONSTRAINT `products_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)) (SQL: insert into `products` (`updated_at`, `created_at`) values (2016-08-24 18:14:44, 2016-08-24 18:14:44))'
