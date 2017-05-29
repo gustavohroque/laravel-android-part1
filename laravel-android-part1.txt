@@ -94,5 +94,16 @@ php artisan vendor:publish --provider="Prettus\Repository\Providers\RepositorySe
 php artisan make:seeder UsersTableSeeder => criando seeder
 php artisan migrate:refresh --seed => cria as seeds
 
+		composer require league/fractal:0.12.*
+
+{
+	"email" : "admin@schoolofnet.com",
+	"password" : "secret"
+}
+{
+	"email" : "gustavo.roque@ttp.com",
+	"password" : "all1234"
+}
+
 
 
