@@ -179,6 +179,7 @@ return [
         // SON\Providers\BroadcastServiceProvider::class,
         SON\Providers\EventServiceProvider::class,
         SON\Providers\RouteServiceProvider::class,
+        SON\Providers\RepositoryServiceProvider::class,
 
     ],
 
