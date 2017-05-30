@@ -87,7 +87,8 @@ laravel-android-part1
 composer create-project --prefer-dist laravel/laravel:5.3.* laravel-android-part1 => instala o laravel na versão solicitada
 composer require tymon/jwt-auth:0.5.9 => instala JWT web token authentication
 composer require prettus/l5-repository:2.6.6 => Instala a biblioteca l5 para auxiliar na criação dos repositories
-composer require hipsterjazzbo/landlord:2.0
+composer require hipsterjazzbo/landlord:2.0 => Aplica o MultiTenancy no laravel
+composer require league/fractal => personaliza a serialização e apresentação dos dados e é integrada com a biblioteca l5-repository
 
 php artisan serve => inicia o servidor
 php artisan app:name SON => altera o nome do namespace

@@ -75,6 +75,7 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
         ),
         'L' => 
         array (
+            'League\\Fractal\\' => 15,
             'League\\Flysystem\\' => 17,
         ),
         'I' => 
@@ -221,6 +222,10 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'League\\Fractal\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/fractal/src',
         ),
         'League\\Flysystem\\' => 
         array (
@@ -1567,6 +1572,27 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
+        'League\\Fractal\\Manager' => __DIR__ . '/..' . '/league/fractal/src/Manager.php',
+        'League\\Fractal\\Pagination\\Cursor' => __DIR__ . '/..' . '/league/fractal/src/Pagination/Cursor.php',
+        'League\\Fractal\\Pagination\\CursorInterface' => __DIR__ . '/..' . '/league/fractal/src/Pagination/CursorInterface.php',
+        'League\\Fractal\\Pagination\\DoctrinePaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/DoctrinePaginatorAdapter.php',
+        'League\\Fractal\\Pagination\\IlluminatePaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/IlluminatePaginatorAdapter.php',
+        'League\\Fractal\\Pagination\\PagerfantaPaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/PagerfantaPaginatorAdapter.php',
+        'League\\Fractal\\Pagination\\PaginatorInterface' => __DIR__ . '/..' . '/league/fractal/src/Pagination/PaginatorInterface.php',
+        'League\\Fractal\\Pagination\\PhalconFrameworkPaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/PhalconFrameworkPaginatorAdapter.php',
+        'League\\Fractal\\Pagination\\ZendFrameworkPaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/ZendFrameworkPaginatorAdapter.php',
+        'League\\Fractal\\ParamBag' => __DIR__ . '/..' . '/league/fractal/src/ParamBag.php',
+        'League\\Fractal\\Resource\\Collection' => __DIR__ . '/..' . '/league/fractal/src/Resource/Collection.php',
+        'League\\Fractal\\Resource\\Item' => __DIR__ . '/..' . '/league/fractal/src/Resource/Item.php',
+        'League\\Fractal\\Resource\\NullResource' => __DIR__ . '/..' . '/league/fractal/src/Resource/NullResource.php',
+        'League\\Fractal\\Resource\\ResourceAbstract' => __DIR__ . '/..' . '/league/fractal/src/Resource/ResourceAbstract.php',
+        'League\\Fractal\\Resource\\ResourceInterface' => __DIR__ . '/..' . '/league/fractal/src/Resource/ResourceInterface.php',
+        'League\\Fractal\\Scope' => __DIR__ . '/..' . '/league/fractal/src/Scope.php',
+        'League\\Fractal\\Serializer\\ArraySerializer' => __DIR__ . '/..' . '/league/fractal/src/Serializer/ArraySerializer.php',
+        'League\\Fractal\\Serializer\\DataArraySerializer' => __DIR__ . '/..' . '/league/fractal/src/Serializer/DataArraySerializer.php',
+        'League\\Fractal\\Serializer\\JsonApiSerializer' => __DIR__ . '/..' . '/league/fractal/src/Serializer/JsonApiSerializer.php',
+        'League\\Fractal\\Serializer\\SerializerAbstract' => __DIR__ . '/..' . '/league/fractal/src/Serializer/SerializerAbstract.php',
+        'League\\Fractal\\TransformerAbstract' => __DIR__ . '/..' . '/league/fractal/src/TransformerAbstract.php',
         'Math_BigInteger' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Math/BigInteger.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
@@ -2668,6 +2694,7 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
         'SON\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'SON\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'SON\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
+        'SON\\Http\\Middleware\\TenantMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/TenantMiddleware.php',
         'SON\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'SON\\Http\\Requests\\BillPayRequest' => __DIR__ . '/../..' . '/app/Http/Requests/BillPayRequest.php',
         'SON\\Http\\Requests\\CategoryRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CategoryRequest.php',
@@ -2687,6 +2714,7 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
         'SON\\Repositories\\BillPayRepositoryEloquent' => __DIR__ . '/../..' . '/app/Repositories/BillPayRepositoryEloquent.php',
         'SON\\Repositories\\CategoryRepository' => __DIR__ . '/../..' . '/app/Repositories/CategoryRepository.php',
         'SON\\Repositories\\CategoryRepositoryEloquent' => __DIR__ . '/../..' . '/app/Repositories/CategoryRepositoryEloquent.php',
+        'SON\\Repositories\\RepositoryMultitenancyInterface' => __DIR__ . '/../..' . '/app/Repositories/RepositoryMultitenancyInterface.php',
         'SON\\Repositories\\UserRepository' => __DIR__ . '/../..' . '/app/Repositories/UserRepository.php',
         'SON\\Repositories\\UserRepositoryEloquent' => __DIR__ . '/../..' . '/app/Repositories/UserRepositoryEloquent.php',
         'SON\\Transformers\\BillPayTransformer' => __DIR__ . '/../..' . '/app/Transformers/BillPayTransformer.php',
