@@ -26,6 +26,7 @@ class RepositoryServiceProvider extends ServiceProvider
         //Faz a dependecy injection automaticamente
         $this->app->bind(\SON\Repositories\CategoryRepository::class, \SON\Repositories\CategoryRepositoryEloquent::class);
         $this->app->bind(\SON\Repositories\BillPayRepository::class, \SON\Repositories\BillPayRepositoryEloquent::class);
+        $this->app->bind(\SON\Repositories\UserRepository::class, \SON\Repositories\UserRepositoryEloquent::class);
         //:end-bindings:
     }
 }
