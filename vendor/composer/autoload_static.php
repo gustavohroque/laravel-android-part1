@@ -106,6 +106,10 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
             'ClassPreloader\\' => 15,
             'Carbon\\' => 7,
         ),
+        'B' => 
+        array (
+            'Barryvdh\\Cors\\' => 14,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -283,6 +287,10 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
+        'Barryvdh\\Cors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/laravel-cors/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -361,6 +369,12 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
     );
 
     public static $classMap = array (
+        'Barryvdh\\Cors\\CorsService' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/CorsService.php',
+        'Barryvdh\\Cors\\HandleCors' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/HandleCors.php',
+        'Barryvdh\\Cors\\HandlePreflight' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/HandlePreflight.php',
+        'Barryvdh\\Cors\\LumenServiceProvider' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/LumenServiceProvider.php',
+        'Barryvdh\\Cors\\OriginMatcher' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/OriginMatcher.php',
+        'Barryvdh\\Cors\\ServiceProvider' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/ServiceProvider.php',
         'BillPaysTableSeeder' => __DIR__ . '/../..' . '/database/seeds/BillPaysTableSeeder.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
@@ -381,6 +395,8 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
         'ClassPreloader\\Parser\\FileVisitor' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/Parser/FileVisitor.php',
         'ClassPreloader\\Parser\\NodeTraverser' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/Parser/NodeTraverser.php',
         'ClassPreloader\\Parser\\StrictTypesVisitor' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/Parser/StrictTypesVisitor.php',
+        'CorsKernel' => __DIR__ . '/..' . '/barryvdh/laravel-cors/tests/CorsKernel.php',
+        'CorsServiceTest' => __DIR__ . '/..' . '/barryvdh/laravel-cors/tests/CorsServiceTest.php',
         'CreateBillPaysTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_30_123454_create_bill_pays_table.php',
         'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_29_141814_create_categories_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
@@ -860,6 +876,8 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
         'File_X509' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/X509.php',
+        'GlobalMiddlewareTest' => __DIR__ . '/..' . '/barryvdh/laravel-cors/tests/GlobalMiddlewareTest.php',
+        'GroupMiddlewareTest' => __DIR__ . '/..' . '/barryvdh/laravel-cors/tests/GroupMiddlewareTest.php',
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -1642,6 +1660,7 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
         'League\\Fractal\\Serializer\\SerializerAbstract' => __DIR__ . '/..' . '/league/fractal/src/Serializer/SerializerAbstract.php',
         'League\\Fractal\\TransformerAbstract' => __DIR__ . '/..' . '/league/fractal/src/TransformerAbstract.php',
         'Math_BigInteger' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Math/BigInteger.php',
+        'MockApp' => __DIR__ . '/..' . '/barryvdh/laravel-cors/tests/CorsServiceTest.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryTestCase' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php',
@@ -1827,6 +1846,7 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
         'Net_SFTP_Stream' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SFTP/Stream.php',
         'Net_SSH1' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SSH1.php',
         'Net_SSH2' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SSH2.php',
+        'OriginMatcherTest' => __DIR__ . '/..' . '/barryvdh/laravel-cors/tests/OriginMatcherTest.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/Assert.php',
         'PHPUnit\\Framework\\BaseTestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/BaseTestListener.php',
         'PHPUnit\\Framework\\TestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
@@ -2409,6 +2429,7 @@ class ComposerStaticInitf2c507b9aceabd368d292e38206ac99b
         'PhpParser\\Serializer\\XML' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Serializer/XML.php',
         'PhpParser\\Unserializer' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Unserializer.php',
         'PhpParser\\Unserializer\\XML' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Unserializer/XML.php',
+        'PreflightTest' => __DIR__ . '/..' . '/barryvdh/laravel-cors/tests/PreflightTest.php',
         'Prettus\\Repository\\Contracts\\CacheableInterface' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Contracts/CacheableInterface.php',
         'Prettus\\Repository\\Contracts\\CriteriaInterface' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Contracts/CriteriaInterface.php',
         'Prettus\\Repository\\Contracts\\Presentable' => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository/Contracts/Presentable.php',

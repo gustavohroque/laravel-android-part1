@@ -90,12 +90,15 @@ composer require prettus/l5-repository:2.6.6 => Instala a biblioteca l5 para aux
 composer require hipsterjazzbo/landlord:2.0 => Aplica o MultiTenancy no laravel
 composer require league/fractal => personaliza a serialização e apresentação dos dados e é integrada com a biblioteca l5-repository
 composer require "darkaonline/l5-swagger:~3.0"
+composer require barryvdh/laravel-cors => abre e configura portas de configuração/ CORS integrado com laravel
+
 php artisan serve => inicia o servidor
 php artisan app:name SON => altera o nome do namespace
 
 php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\JWTAuthServiceProvider" => Publica o Service provider dentro da config/jwt.php
 php artisan vendor:publish --provider="Prettus\Repository\Providers\RepositoryServiceProvider" => Publica o Service provider dentro da /config/repository.php
 php artisan vendor:publish --provider="HipsterJazzbo\Landlord\LandlordServiceProvider" => Publica o Service provider dentro da /config/landlord.php
+php artisan vendor:publish --provider="Barryvdh\Cors\ServiceProvider" => Publica o Service provider dentro da /config/cors.php
 php artisan make:seeder UsersTableSeeder => criando seeder
 php artisan make:seeder BillPaysTableSeeder
 
