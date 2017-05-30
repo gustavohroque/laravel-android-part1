@@ -1,0 +1,39 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "School of Net - SON Financeiro API",
+        "version": "0.0.1"
+    },
+    "paths": {
+        "/api/login": {
+            "post": {
+                "summary": "Requisitar token JWT",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "email": {
+                                    "description": "Requisitar token JWT",
+                                    "type": "string"
+                                },
+                                "password": {
+                                    "description": "Requisitar token JWT",
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Token JWT"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {}
+}

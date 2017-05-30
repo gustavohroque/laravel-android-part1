@@ -89,7 +89,7 @@ composer require tymon/jwt-auth:0.5.9 => instala JWT web token authentication
 composer require prettus/l5-repository:2.6.6 => Instala a biblioteca l5 para auxiliar na criação dos repositories
 composer require hipsterjazzbo/landlord:2.0 => Aplica o MultiTenancy no laravel
 composer require league/fractal => personaliza a serialização e apresentação dos dados e é integrada com a biblioteca l5-repository
-
+composer require "darkaonline/l5-swagger:~3.0"
 php artisan serve => inicia o servidor
 php artisan app:name SON => altera o nome do namespace
 

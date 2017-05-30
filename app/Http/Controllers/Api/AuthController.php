@@ -15,8 +15,25 @@ use Tymon\JWTAuth\Exceptions\JWTException;
 class  AuthController extends Controller
 {
     /**
-     * @param Request $request
-     * @return \Illuminate\Http\JsonResponse
+     * @SWG\Info(title="School of Net - SON Financeiro API", version="0.0.1")
+     */
+
+    /**
+     * Requisitar token JWT
+     *
+     * @SWG\Post(
+     *     path="/api/login",
+     *     @SWG\Parameter(
+     *          name="body", in="body", required=true,
+     *          @SWG\Schema(
+     *              @SWG\Property(property="email", type="string"),
+     *              @SWG\Property(property="password", type="string"),
+     *          )
+     *     ),
+     *     @SWG\Response(
+     *      response="200", description="Token JWT"
+     *     )
+     * )
      */
     public function login( Request $request )
     {
