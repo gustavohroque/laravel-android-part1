@@ -4,9 +4,7 @@ namespace SON\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use SON\Repositories\BillPayRepository;
 use SON\Models\BillPay;
-use SON\Validators\BillPayValidator;
 
 /**
  * Class BillPayRepositoryEloquent
