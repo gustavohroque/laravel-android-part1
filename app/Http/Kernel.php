@@ -3,6 +3,7 @@
 namespace SON\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use SON\Http\Middleware\TenantMiddleware;
 
 class Kernel extends HttpKernel
 {
@@ -53,5 +54,6 @@ class Kernel extends HttpKernel
         'guest' => \SON\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'jwt.auth' => \Tymon\JWTAuth\Middleware\GetUserFromToken::class,
+        'tenant' => \SON\Http\Middleware\TenantMiddleware::class,
     ];
 }

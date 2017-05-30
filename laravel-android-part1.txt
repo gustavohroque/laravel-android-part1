@@ -80,17 +80,21 @@ php artisan make:request PostRequest ( Cria a Request Para validação )
 Criando API no LARAVEL
 -Repository
 -Multitenancy
+**Correção**
+/home/roque/projetos/laravel-android-part1/vendor/hipsterjazzbo/landlord/src/TenantManager.php : 140 força passar array inves do object
 
 laravel-android-part1
 composer create-project --prefer-dist laravel/laravel:5.3.* laravel-android-part1 => instala o laravel na versão solicitada
 composer require tymon/jwt-auth:0.5.9 => instala JWT web token authentication
 composer require prettus/l5-repository:2.6.6 => Instala a biblioteca l5 para auxiliar na criação dos repositories
+composer require hipsterjazzbo/landlord:2.0
 
 php artisan serve => inicia o servidor
 php artisan app:name SON => altera o nome do namespace
 
 php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\JWTAuthServiceProvider" => Publica o Service provider dentro da config/jwt.php
 php artisan vendor:publish --provider="Prettus\Repository\Providers\RepositoryServiceProvider" => Publica o Service provider dentro da /config/repository.php
+php artisan vendor:publish --provider="HipsterJazzbo\Landlord\LandlordServiceProvider" => Publica o Service provider dentro da /config/landlord.php
 php artisan make:seeder UsersTableSeeder => criando seeder
 php artisan make:seeder BillPaysTableSeeder
 

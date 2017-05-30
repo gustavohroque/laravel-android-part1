@@ -31,4 +31,10 @@ class BillPayRepositoryEloquent extends BaseRepository implements BillPayReposit
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
+
+    public function applyMultitenancy()
+    {
+        //força que o eloqunte iniciale o multitenancy
+        BillPay::clearBootedModels();
+    }
 }

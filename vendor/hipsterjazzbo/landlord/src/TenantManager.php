@@ -137,7 +137,9 @@ class TenantManager
      */
     public function newQueryWithoutTenants(Model $model)
     {
-        return $model->newQuery()->withoutGlobalScopes($this->tenants->keys());
+        //Correção força o casting estava passando object inves do array
+        $key = is_array($this->tenants->keys()) ? $this->tenants->keys() : array($this->tenants->keys());
+        return $model->newQuery()->withoutGlobalScopes($key);
     }
 
     /**
