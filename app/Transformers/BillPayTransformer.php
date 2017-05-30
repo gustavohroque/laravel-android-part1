@@ -4,6 +4,7 @@ namespace SON\Transformers;
 
 use League\Fractal\TransformerAbstract;
 use SON\Models\BillPay;
+use SON\Models\Category;
 
 /**
  * Class BillPayTransformer
@@ -11,10 +12,10 @@ use SON\Models\BillPay;
  */
 class BillPayTransformer extends TransformerAbstract
 {
-
+    protected $defaultIncludes = ['category'];
     /**
      * Transform the \BillPay entity
-     * @param \BillPay $model
+     * @param BillPay $model
      *
      * @return array
      */
@@ -30,5 +31,9 @@ class BillPayTransformer extends TransformerAbstract
             'created_at'    => $model->created_at,
             'updated_at'    => $model->updated_at
         ];
+    }
+
+    public function includeCategory(BillPay $model){
+        return $this->item($model->category, new CategoryTransformer());
     }
 }
